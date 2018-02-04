@@ -14,7 +14,7 @@ paginate = 10
 
 [params]
   # Shown in the home page
-  subtitle = "Anthropology, Academics, and Adventures"
+  subtitle = "Anthropology, Adventures, and Academia"
   brand = "Marie"
   googleAnalytics = "Your Google Analytics tracking ID"
   disqus = "Your Disqus shortname"

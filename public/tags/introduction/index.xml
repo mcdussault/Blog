@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data and the Anthropologist</title>
-    <link>/</link>
-    <description>Recent content on Data and the Anthropologist</description>
+    <title>Introduction on Data and the Anthropologist</title>
+    <link>/tags/introduction/</link>
+    <description>Recent content in Introduction on Data and the Anthropologist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
     <lastBuildDate>Sun, 04 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,24 +20,6 @@
       <guid>/post/so-how-did-we-end-up-here/</guid>
       <description>Really, how did the person who hates writing end up writing a blog? A lot of encouragement (thanks, Maëlle!) and a genuine desire to finally start working on the personal development that becomes important when you realise a postdoc is a terminal affliction.
 The main motivation for starting to blog is to document my journey learning how to use the statistical computing language R. Somehow, along the way, I’ve fallen for the intricacies, quirks, and little wins that I’ve achieved in my three months of intense R study.</description>
-    </item>
-    
-    <item>
-      <title>Marie Christine Dussault</title>
-      <link>/about/</link>
-      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>/contact/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/contact/</guid>
-      <description> First Name  Last Name  E-Mail  City  State AL CA IL      Send   </description>
     </item>
     
   </channel>
