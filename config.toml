@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "Data and the Anthropologist"
 theme = "blackburn"
 author = "Marie Christine Dussault"
-copyright = "&copy; 2018. All rights reserved."
+copyright = "&copy; 2017. All rights reserved."
 canonifyurls = true
 paginate = 10
 
@@ -14,7 +14,11 @@ paginate = 10
 
 [params]
   # Shown in the home page
+<<<<<<< HEAD
   subtitle = "Anthropology, Academia, and AdventuR"
+=======
+  subtitle = "Anthropology, Adventures, and Academia"
+>>>>>>> 4bda7e841611ffaaa03f0a3d7977c87a577d46e3
   brand = "Marie"
   googleAnalytics = "Your Google Analytics tracking ID"
   disqus = "Your Disqus shortname"

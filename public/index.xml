@@ -6,7 +6,11 @@
     <description>Recent content on Data and the Anthropologist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+<<<<<<< HEAD
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+=======
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+>>>>>>> 4bda7e841611ffaaa03f0a3d7977c87a577d46e3
     <lastBuildDate>Sun, 04 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
