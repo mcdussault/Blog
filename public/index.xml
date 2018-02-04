@@ -23,6 +23,15 @@ The main motivation for starting to blog is to document my journey learning how 
     </item>
     
     <item>
+      <title>test</title>
+      <link>/post/test/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/test/</guid>
+      <description>This is a test</description>
+    </item>
+    
+    <item>
       <title>Marie Christine Dussault</title>
       <link>/about/</link>
       <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
