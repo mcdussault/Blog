@@ -22,14 +22,5 @@
 The main motivation for starting to blog is to document my journey learning how to use the statistical computing language R. Somehow, along the way, I’ve fallen for the intricacies, quirks, and little wins that I’ve achieved in my three months of intense R study.</description>
     </item>
     
-    <item>
-      <title>test</title>
-      <link>/post/test/</link>
-      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/test/</guid>
-      <description>This is a test</description>
-    </item>
-    
   </channel>
 </rss>
