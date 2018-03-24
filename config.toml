@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://mcdussault.rbind.io/"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 languageCode = "en-us"
 title = "Data and the Anthropologist"
