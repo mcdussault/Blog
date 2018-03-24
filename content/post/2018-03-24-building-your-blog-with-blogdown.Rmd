@@ -52,7 +52,7 @@ and the blog post [Jon The Geek: Blogging in About Ten Minutes](http://jonthegee
 You will need to create a [Github](https://github.com/) account- Your static site "lives" here 
 
 You will also need to install Git on your machine. After installing Git on your computer, you will need to enable this when you create a project for your blog in R Studio. 
-![Git/SVN](/img/blogdown/git_RStudio.png)
+![](/img/blogdown/git_RStudio.png)
 
 If you need help with Git and version control, please consult Jenny Bryan's [Happy Git with R](http://happygitwithr.com/). 
 
@@ -121,25 +121,26 @@ The following are the fields that you can start customising:
 
 In the content folder of your blog, you will find the About.md file. This can be modified to reflect whatever you want to tell the world about yourself. An about link on your main page will redirect here.
 
-![about](images/about.png)
+![](/img/blogdown/about.png)
 
 
 **Cleaning out unecessary files**
 
 When creating your new site, it is populated with example files in the content > post folder. It is advisable to deleted these files so they are not pushed to your site when you deploy it. 
 
-![Fresh](/img/blogdown/fresh.gif)
+![via [Giphy](https://giphy.com/)](/img/blogdown/fresh.gif)
+
 **Serving your site**
 
 Seeing the site is the best part! Now that you have put together the bones of your site, you can serve the site so that you can see what it will look like. Navigate to your Addins dropdown menu in R Studio. Select **Serve Site** from the dropdown and admire the awesomeness in your Viewer window!
 
-![](/img/blogdown/boss.gif)
+![via [Giphy](https://giphy.com/)](/img/blogdown/boss.gif)
 
 You can now go back to any of the previous steps and tweak things if you don't like what you see!
 
 **Time to...**
 
-![via [Giphy](https://giphy.com/](/img/blogdown/rip_bandaid.gif)
+![via [Giphy](https://giphy.com/)](/img/blogdown/rip_bandaid.gif)
 
 **Commit to Github!**
 
@@ -153,6 +154,51 @@ Once you have done the commit to Github, you should check if it has been complet
 
 ![](/img/blogdown/commited.png)
 
+**Deploying on [Netlify](https://www.netlify.com/)**
+These are the final set up steps and require that you sign up for an account at [Netlify](https://www.netlify.com/). Once signed up, click on New Site from Git on your main homepage
+
+![](/img/blogdown/netlify_newsite.png)
+
+Select [Github](https://github.com) as the source of the site under Continuous Development and select the repository that your site lives in on [Github](https://github.com).
+
+![](/img/blogdown/continuous_dev.png)
+
+
+Next, you should set the **Build Command** to hugo_0.19 and the **Publish** directory to public
+
+![](/img/blogdown/deploy.png)
+
+
+Finally, once you click deploy, it will take you to your general settings. Now, Angry Jones seemed like a perfectly ok name for a website, but it might not be for you!
+Here you may change the site name by entering your desired blog name and [Netlify](https://www.netlify.com/) will tell you if it is available.
+
+![](/img/blogdown/site_name.png)
+After the site is deployed with the right name, go back to your Config.toml file in R Studio and change the URL at the very top to reflect the [Netlify](https://www.netlify.com/) URL for your site.
+
+
+**Writing your first post**
+
+Now you are ready to write your very first post!
+In the R Studio Addins menu, select New Post
+
+![new_post](/img/blogdown/first_post.png)
+Write your content, commit, and **push to Github** using the same procedure as before! [Netlify](https://www.netlify.com/) will update on its own, as will your site! Lastly, go check online to see if your website has populated correctly with the new post. This may take a few seconds while [Netlify](https://www.netlify.com/) gets the information from [Github](https://github.com).
+
+
+At this point, you have your very own blog. You can now opt to get a personalised domain or, as I did, join the other R Stats bloggers by getting an Rbind.io subdomain. To get your own rbind.io address, visit [Rbind.io](https://github.com/rbind/support/issues) on Github and make a request following their template.
+
+![](/img/blogdown/rbind_issue.png) 
+
+**Change subdomain at Netlify**
+
+If you chose to get a subdomain with [Rbind.io](https://github.com/rbind/support/issues), in your [Netlify](https://www.netlify.com/) account, visit Domain Settings and add in your subdomain address. Everything is set up so that your site re-directs correctly.
+
+![](/img/blogdown/custom_domain.png)
+
+And that is all you need to do!
+Thank you!
+
+![](/img/blogdown/ron2.gif)
 
 
 
