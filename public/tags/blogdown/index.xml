@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Data and the Anthropologist</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Data and the Anthropologist</description>
+    <title>Blogdown on Data and the Anthropologist</title>
+    <link>/tags/blogdown/</link>
+    <description>Recent content in Blogdown on Data and the Anthropologist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sat, 24 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <guid>/post/building-your-blog-using-blogdown/</guid>
       <description>Recently, I presented my first talk at an R Ladies meetup, in beautiful Cape Town. I was lucky enough to be invited to particpate in this with two amazing R Ladies, Maelle Salmon and Stephanie Kovalchik. I had a great time and really enjoyed giving my very first R stats talk.
 I considered not actually turning my talk into a blog post, as there are already some amazing resources out there by many people (some fantastic ones are curated by Mara Averick).</description>
-    </item>
-    
-    <item>
-      <title>So... How did we end up here?</title>
-      <link>/post/so-how-did-we-end-up-here/</link>
-      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/so-how-did-we-end-up-here/</guid>
-      <description>Really, how did the person who hates writing end up writing a blog? A lot of encouragement (thanks, Maëlle!) and a genuine desire to finally start working on the personal development that becomes important when you realise a postdoc is a terminal affliction.
-The main motivation for starting to blog is to document my journey learning how to use the statistical computing language R. Somehow, along the way, I’ve fallen for the intricacies, quirks, and little wins that I’ve achieved in my three months of intense R study.</description>
     </item>
     
   </channel>

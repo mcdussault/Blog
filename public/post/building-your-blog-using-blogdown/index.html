@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.37" />
+
+  <title>Building your blog using blogdown &middot; Data and the Anthropologist</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">Marie</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/projects/"><i class='fa fa-list fa-fw'></i>Projects</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/@londonaesthetik" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/mcdussault" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Building your blog using blogdown</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>24 Mar 2018, 00:00</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/blog">blog</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/blogdown">blogdown</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rstats">rstats</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>Recently, I presented my first talk at an R Ladies meetup, in beautiful Cape Town. I was lucky enough to be invited to particpate in this with two amazing R Ladies, <a href="http://www.masalmon.eu/">Maelle Salmon</a> and <a href="http://on-the-t.com/">Stephanie Kovalchik</a>. I had a great time and really enjoyed giving my very first R stats talk.</p>
+<p>I considered not actually turning my talk into a blog post, as there are already some amazing resources out there by many people (some fantastic ones are curated by <a href="https://maraaverick.rbind.io/2017/10/keeping-up-with-blogdown/">Mara Averick</a>). However, the talk actually made me realise that writing a blog post from my presentation could work as there are people who have no had any exposure to the great <a href="https://yihui.name/en/">Yihui Xie</a> package <a href="https://cran.r-project.org/web/packages/blogdown/index.html">blogdown</a>. So here follows some advice and workflow for starting your very own blog (or even website) using the blogdown package!</p>
+<hr />
+<p>Starting is easier than you think!</p>
+<div class="figure">
+<img src="/img/blogdown/what.gif" alt="via Giphy" />
+<p class="caption">via <a href="https://giphy.com/">Giphy</a></p>
+</div>
+<p>This will be a <strong>very basic introduction</strong> to starting a blog/website with blogdown. Essentially, this is a quick and dirty starting point that will get you going in a short amount of time, if you chose to not tweak things too much!</p>
+<p><strong>In case of emergency!</strong></p>
+<p>Follow the advice in <a href="https://bookdown.org/yihui/blogdown/">Blogdown by Xie, Thomas, and Presmanes Hill</a></p>
+<p><img src="/img/blogdown/blogdown_book.png" /></p>
+<p>and the blog post <a href="http://jonthegeek.com/2018/02/27/blogging-in-ten-minutes/">Jon The Geek: Blogging in About Ten Minutes</a></p>
+<p><strong>What will you need?</strong></p>
+<p><em>In R</em></p>
+<ul>
+<li>Rstudio</li>
+<li>Working knowledge of R Markdown</li>
+<li>The blogdown package (available via CRAN)</li>
+</ul>
+<p><em>Outside R</em></p>
+<ul>
+<li>Git and <a href="https://github.com/join">Github</a> account</li>
+<li><a href="https://www.netlify.com/">Netlify</a> account</li>
+</ul>
+<p><strong>Git and Github</strong></p>
+<p>You will need to create a <a href="https://github.com/">Github</a> account- Your static site “lives” here</p>
+<p>You will also need to install Git on your machine. After installing Git on your computer, you will need to enable this when you create a project for your blog in R Studio.
+<img src="/img/blogdown/git_RStudio.png" alt="Git/SVN" /></p>
+<p>If you need help with Git and version control, please consult Jenny Bryan’s <a href="http://happygitwithr.com/">Happy Git with R</a>.</p>
+<p><strong>Create your new Github repo</strong></p>
+<p>If you have read the blodown book, this is where my process will differ slightly, but I find this workflow simplifies it even more! Visit <a href="https://github.com/new">Github New Repository</a> or click the Plus symbol (top right) of your account landing page to create a new repository for your blog. Pick a name for the repository that will identify it as your blog.</p>
+<p><img src="/img/blogdown/github_new.png" /></p>
+<p><strong>Create your RStudio project</strong></p>
+<p>The next step is to create a new project within R Studio. When creating the new project, select Version Control &gt; Git so that you can link this project to your <a href="https://github.com">Github</a> account.</p>
+<p>Paste the URL of your git repository and include where your github directory lives on your computer.</p>
+<p><img src="/img/blogdown/git_repo.png" /></p>
+<p><strong>And now, Blogdown!</strong></p>
+<p>To generate a generic a blogdown site quickly, using the built in theme and set up, you will need to use the following code.</p>
+<pre class="r"><code>library(blogdown)
+install_hugo()
+new_site()</code></pre>
+<p>Blogdown will generate the necessary file structure within your directory and populate some example files as well as CSS files for the theme.</p>
+<p><img src="/img/blogdown/blog_generated.png" /></p>
+<p><strong>Themes</strong>
+Your theme will give your blog some flavour and will help to organise it depending on your purpose. Some themes are strictly for blogging, some help you to display your past projects and can include additional pages for this purpose. Themes can be found at the <a href="https://themes.gohugo.io/">Hugo</a> website, displaying what they look like and including links to the require github repos.</p>
+<p><img src="/img/blogdown/hugo_site.png" /></p>
+<p><strong>Installing a theme</strong></p>
+<p>I recommend picking your theme <strong>before</strong> you build your site. I made the mistake of building my site with the theme that comes with blogdown out of the box and then became very confused trying to alter it to my chosen theme! Following the blogdown book advice, it is best to pick your theme first, find the address for it’s github repo and <em>then</em> create your new site using the following code:</p>
+<pre class="r"><code>new_site(theme = &quot;gcushen/hugo-academic&quot;)</code></pre>
+<p><strong>Configuration file</strong></p>
+<p>Once you have picked your theme and ran the code which generates your new site, you will start tweaking the website a little bit! This will customise your site with a title, relevant accounts for communication with the author and a little customising the URL format of your posts.</p>
+<p><img src="/img/blogdown/config1.png" alt="config_file" />
+The following are the fields that you can start customising:</p>
+<ul>
+<li><strong>title</strong> Pick a title for your blog</li>
+<li><strong>google analytics</strong>: Account details, if you have one</li>
+<li><strong>discus</strong>: Account details, if you have one</li>
+<li><strong>post</strong>: The way the URL format of your post will be. Unless you want something specific, the default should be suitable</li>
+<li><strong>name</strong>: Whatever you’d like to be known as</li>
+<li><strong>URL</strong>: URL to your about section - Can be changed later on!</li>
+<li><strong>About</strong>: This is set up to direct to your “About” file</li>
+<li><strong>Github/Twitter</strong>: Populate with account links</li>
+<li><strong>Description</strong>: Can be updated with your own description</li>
+<li><strong>Baseurl</strong>: This will be changed later on</li>
+</ul>
+<p><strong>About.md</strong></p>
+<p>In the content folder of your blog, you will find the About.md file. This can be modified to reflect whatever you want to tell the world about yourself. An about link on your main page will redirect here.</p>
+<div class="figure">
+<img src="images/about.png" alt="about" />
+<p class="caption">about</p>
+</div>
+<p><strong>Cleaning out unecessary files</strong></p>
+<p>When creating your new site, it is populated with example files in the content &gt; post folder. It is advisable to deleted these files so they are not pushed to your site when you deploy it.</p>
+<div class="figure">
+<img src="/img/blogdown/fresh.gif" alt="Fresh" />
+<p class="caption">Fresh</p>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/post/so-how-did-we-end-up-here/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/post/so-how-did-we-end-up-here/">So... How did we end up here?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking ID', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+</body>
+</html>
+

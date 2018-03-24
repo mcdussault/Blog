@@ -1,0 +1,131 @@
+---
+title: Building your blog using blogdown
+author: Marie Christine Dussault
+date: '2018-03-24'
+slug: building-your-blog-using-blogdown
+categories:
+  - blog
+  - blogdown
+tags:
+  - blog
+  - blogdown
+  - rstats
+---
+
+Recently, I presented my first talk at an R Ladies meetup, in beautiful Cape Town. I was lucky enough to be invited to particpate in this with two amazing R Ladies, [Maelle Salmon](http://www.masalmon.eu/) and [Stephanie Kovalchik](http://on-the-t.com/). I had a great time and really enjoyed giving my very first R stats talk.
+
+I considered not actually turning my talk into a blog post, as there are already some amazing resources out there by many people (some fantastic ones are curated by [Mara Averick](https://maraaverick.rbind.io/2017/10/keeping-up-with-blogdown/)). However, the talk actually made me realise that writing a blog post from my presentation could work as there are people who have no had any exposure to the great [Yihui Xie](https://yihui.name/en/) package [blogdown](https://cran.r-project.org/web/packages/blogdown/index.html). So here follows some advice and workflow for starting your very own blog (or even website) using the blogdown package!
+
+---
+
+Starting is easier than you think!
+
+![via [Giphy](https://giphy.com/)](/img/blogdown/what.gif)
+
+This will be a **very basic introduction** to starting a blog/website with blogdown. Essentially, this is a quick and dirty starting point that will get you going in a short amount of time, if you chose to not tweak things too much!
+
+**In case of emergency!**
+
+Follow the advice in [Blogdown by Xie, Thomas, and Presmanes Hill](https://bookdown.org/yihui/blogdown/) 
+
+![](/img/blogdown/blogdown_book.png) 
+
+and the blog post [Jon The Geek: Blogging in About Ten Minutes](http://jonthegeek.com/2018/02/27/blogging-in-ten-minutes/)
+
+
+**What will you need?**
+
+ *In R*
+ 
+- Rstudio
+- Working knowledge of R Markdown 
+- The blogdown package (available via CRAN)
+
+
+*Outside R*
+
+- Git and [Github](https://github.com/join) account
+- [Netlify](https://www.netlify.com/) account 
+
+**Git and Github**
+
+You will need to create a [Github](https://github.com/) account- Your static site "lives" here 
+
+You will also need to install Git on your machine. After installing Git on your computer, you will need to enable this when you create a project for your blog in R Studio. 
+![Git/SVN](/img/blogdown/git_RStudio.png)
+
+If you need help with Git and version control, please consult Jenny Bryan's [Happy Git with R](http://happygitwithr.com/). 
+
+**Create your new Github repo**
+
+If you have read the blodown book, this is where my process will differ slightly, but I find this workflow simplifies it even more! Visit [Github New Repository](https://github.com/new) or click the Plus symbol (top right) of your account landing page to create a new repository for your blog. Pick a name for the repository that will identify it as your blog. 
+
+![](/img/blogdown/github_new.png)
+
+**Create your RStudio project**
+
+The next step is to create a new project within R Studio. When creating the new project, select Version Control > Git so that you can link this project to your [Github](https://github.com) account. 
+
+Paste the URL of your git repository and include where your github directory lives on your computer.
+
+![](/img/blogdown/git_repo.png)
+
+**And now, Blogdown!**
+
+To generate a generic a blogdown site quickly, using the built in theme and set up, you will need to use the following code. 
+
+```{r eval=FALSE}
+library(blogdown)
+install_hugo()
+new_site()
+```
+
+Blogdown will generate the necessary file structure within your directory and populate some example files as well as CSS files for the theme. 
+
+![](/img/blogdown/blog_generated.png) 
+
+**Themes**
+Your theme will give your blog some flavour and will help to organise it depending on your purpose. Some themes are strictly for blogging, some help you to display your past projects and can include additional pages for this purpose. Themes can be found at the [Hugo](https://themes.gohugo.io/) website, displaying what they look like and including links to the require github repos.
+
+![](/img/blogdown/hugo_site.png)
+
+
+**Installing a theme**
+
+I recommend picking your theme  **before** you build your site. I made the mistake of building my site with the theme that comes with blogdown out of the box and then became very confused trying to alter it to my chosen theme! Following the blogdown book advice, it is best to pick your theme first, find the address for it's github repo and *then* create your new site using the following code: 
+
+```{r eval = FALSE}
+new_site(theme = "gcushen/hugo-academic")
+```
+
+
+**Configuration file**
+
+Once you have picked your theme and ran the code which generates your new site, you will start tweaking the website a little bit! This will customise your site with a title, relevant accounts for communication with the author and a little customising the URL format of your posts.
+
+![config_file](/img/blogdown/config1.png)
+The following are the fields that you can start customising:
+
+* **title** Pick a title for your blog
+* **google analytics**: Account details, if you have one
+* **discus**: Account details, if you have one
+* **post**: The way the URL format of your post will be. Unless you want something specific, the default should be suitable
+* **name**: Whatever you'd like to be known as
+* **URL**: URL to your about section - Can be changed later on!
+* **About**: This is set up to direct to your "About" file
+* **Github/Twitter**: Populate with account links
+* **Description**: Can be updated with your own description
+* **Baseurl**: This will be changed later on
+
+**About.md**
+
+In the content folder of your blog, you will find the About.md file. This can be modified to reflect whatever you want to tell the world about yourself. An about link on your main page will redirect here.
+
+![about](images/about.png)
+
+
+**Cleaning out unecessary files**
+
+When creating your new site, it is populated with example files in the content > post folder. It is advisable to deleted these files so they are not pushed to your site when you deploy it. 
+
+![Fresh](/img/blogdown/fresh.gif)
