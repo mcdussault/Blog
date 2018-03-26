@@ -14,7 +14,7 @@ tags:
 
 Recently, I presented my first talk at an R Ladies meetup, in beautiful Cape Town. I was lucky enough to be invited to particpate in this with two amazing R Ladies, [Maelle Salmon](http://www.masalmon.eu/) and [Stephanie Kovalchik](http://on-the-t.com/). I had a great time and really enjoyed giving my very first R stats talk.
 
-I considered not actually turning my talk into a blog post, as there are already some amazing resources out there by many people (some fantastic ones are curated by [Mara Averick](https://maraaverick.rbind.io/2017/10/keeping-up-with-blogdown/)). However, the talk actually made me realise that writing a blog post from my presentation could work as there are people who have no had any exposure to the great [Yihui Xie](https://yihui.name/en/) package [blogdown](https://cran.r-project.org/web/packages/blogdown/index.html). So here follows some advice and workflow for starting your very own blog (or even website) using the blogdown package!
+I considered not actually turning my talk into a blog post, as there are already some amazing resources out there by many people (some fantastic ones are curated by [Mara Averick](https://maraaverick.rbind.io/2017/10/keeping-up-with-blogdown/)). However, the talk actually made me realise that writing a blog post from my presentation could work as there are people who have not had any exposure to the great [Yihui Xie](https://yihui.name/en/) package [blogdown](https://cran.r-project.org/web/packages/blogdown/index.html). So here follows some advice and workflow for starting your very own blog (or even website) using the blogdown package!
 
 ---
 
@@ -22,7 +22,7 @@ Starting is easier than you think!
 
 ![via [Giphy](https://giphy.com/)](/img/blogdown/what.gif)
 
-This will be a **very basic introduction** to starting a blog/website with blogdown. Essentially, this is a quick and dirty starting point that will get you going in a short amount of time, if you chose to not tweak things too much!
+This will be a **very basic introduction** to starting a blog/website with blogdown. Essentially, this is a quick and dirty starting point that will get you going in a short amount of time, if you choose to not tweak things too much!
 
 **In case of emergency!**
 
@@ -85,6 +85,7 @@ Blogdown will generate the necessary file structure within your directory and po
 ![](/img/blogdown/blog_generated.png) 
 
 **Themes**
+
 Your theme will give your blog some flavour and will help to organise it depending on your purpose. Some themes are strictly for blogging, some help you to display your past projects and can include additional pages for this purpose. Themes can be found at the [Hugo](https://themes.gohugo.io/) website, displaying what they look like and including links to the require github repos.
 
 ![](/img/blogdown/hugo_site.png)
@@ -106,11 +107,11 @@ Once you have picked your theme and ran the code which generates your new site, 
 ![config_file](/img/blogdown/config1.png)
 The following are the fields that you can start customising:
 
-* **title** Pick a title for your blog
-* **google analytics**: Account details, if you have one
-* **discus**: Account details, if you have one
-* **post**: The way the URL format of your post will be. Unless you want something specific, the default should be suitable
-* **name**: Whatever you'd like to be known as
+* **Title** Pick a title for your blog
+* **Google analytics**: Account details, if you have one
+* **Discus**: Account details, if you have one
+* **Post**: The way the URL format of your post will be. Unless you want something specific, the default should be suitable
+* **Name**: Whatever you'd like to be known as
 * **URL**: URL to your about section - Can be changed later on!
 * **About**: This is set up to direct to your "About" file
 * **Github/Twitter**: Populate with account links
@@ -119,7 +120,7 @@ The following are the fields that you can start customising:
 
 **About.md**
 
-In the content folder of your blog, you will find the About.md file. This can be modified to reflect whatever you want to tell the world about yourself. An about link on your main page will redirect here.
+In the content folder of your blog, you will find the About.md file. This can be modified to reflect whatever you want to tell the world about yourself. An **About** link on your main page will redirect here.
 
 ![](/img/blogdown/about.png)
 
@@ -155,6 +156,7 @@ Once you have done the commit to Github, you should check if it has been complet
 ![](/img/blogdown/commited.png)
 
 **Deploying on [Netlify](https://www.netlify.com/)**
+
 These are the final set up steps and require that you sign up for an account at [Netlify](https://www.netlify.com/). Once signed up, click on New Site from Git on your main homepage
 
 ![](/img/blogdown/netlify_newsite.png)
