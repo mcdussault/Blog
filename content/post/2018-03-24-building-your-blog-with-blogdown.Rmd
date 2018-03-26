@@ -184,7 +184,7 @@ Now you are ready to write your very first post!
 In the R Studio Addins menu, select New Post
 
 ![new_post](/img/blogdown/first_post.png)
-Write your content, commit, and **push to Github** using the same procedure as before! [Netlify](https://www.netlify.com/) will update on its own, as will your site! Lastly, go check online to see if your website has populated correctly with the new post. This may take a few seconds while [Netlify](https://www.netlify.com/) gets the information from [Github](https://github.com).
+Write your content, remember to use the **Serve site** button in the R Studio addins, commit, and **push to Github** using the same procedure as before! [Netlify](https://www.netlify.com/) will update on its own, as will your site! Lastly, go check online to see if your website has populated correctly with the new post. This may take a few seconds while [Netlify](https://www.netlify.com/) gets the information from [Github](https://github.com).
 
 
 At this point, you have your very own blog. You can now opt to get a personalised domain or, as I did, join the other R Stats bloggers by getting an Rbind.io subdomain. To get your own rbind.io address, visit [Rbind.io](https://github.com/rbind/support/issues) on Github and make a request following their template.
